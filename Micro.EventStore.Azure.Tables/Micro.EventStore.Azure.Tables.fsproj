@@ -5,7 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Library.fs" />
+    <Compile Include="EventStreamStore.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Cosmos.Table" Version="2.0.0-preview" />
+    <PackageReference Include="TaskBuilder.fs" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Micro.EventStore.Abstractions\Micro.EventStore.Abstractions.fsproj" />
+    <ProjectReference Include="..\Micro.Azure.Tables\Micro.Azure.Tables.fsproj" />
   </ItemGroup>
 
 </Project>

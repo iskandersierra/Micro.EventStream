@@ -3,7 +3,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Utils.fs" />
     <Compile Include="Events.fs" />
+    <Compile Include="EventStreamStore.fs" />
     <Compile Include="EventStream.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="TaskBuilder.fs" Version="2.1.0" />
   </ItemGroup>
 </Project>
